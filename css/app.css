@@ -15,3 +15,29 @@
 .right-obj {
 	float: right;
 }
+
+#main-content {
+	margin-top: 50px;
+}
+
+.main-accordion-navigation > a {
+	padding: 0px !important;
+	background: #ffffff !important;
+}
+
+#main-footer {
+	margin-top: 50px;
+	bottom: 0px;
+	background: #008cba;
+}
+
+#main-footer li {
+	font-size: 75%;
+	color: #ffffff;
+	height: 50px;
+	padding-top:15px;
+}
+
+#main-footer li.left {
+	border-left: 1px solid rgba(255,255,255,0.2);
+}
