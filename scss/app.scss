@@ -1,0 +1,130 @@
+//@import "settings";
+//@import "foundation";
+
+// Or selectively include components
+ @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+   "foundation/components/buttons",
+//   "foundation/components/clearing",
+   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+   "foundation/components/panels",
+   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+   "foundation/components/top-bar",
+   "foundation/components/type";
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+#main-header {
+	height: 500px;
+	background: url('http://placehold.it/1000x500') no-repeat center;
+}
+
+.top-bar {
+	.name {
+		li a:active, a:link, a:visited, a:hover {
+			color: #008cba;
+			font-size: 2rem;
+		}
+	}
+	background: #ffffff;
+} 
+
+#mega-menu {
+	position: relative;
+	z-index: 1;
+	width: auto;
+	padding: 15px;
+	background: #008cba;
+	color: #ffffff;
+	h4 {
+		color: #ffffff;
+	}
+	ul {
+		list-style-type: none;
+		li.mega-li {
+			float: left;
+			width: auto;
+		}
+	}
+} 
+
+.main-header-panel {
+	@include panel();
+	padding: 10px;
+	margin-top: 200px;
+	margin-bottom: 25px;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+
+.right-obj {
+	float: right;
+}
+
+@media #{$small-only} {
+	#main-content li {
+		max-width: 310px;
+	}
+} 
+
+#main-content {
+	margin-top: 50px;
+	.panel {
+		background: #ffffff;
+		border: none;
+		margin: 0px;
+		padding: 0px;
+		a {
+			display: block;
+		}
+	}
+}
+
+.custom-dropdown-content {
+	@include dropdown-container(
+		$content: content,
+		$max-width: 310px
+	);
+}
+
+#main-footer {
+	margin-top: 50px;
+	bottom: 0px;
+	background: #008cba;
+}
+
+#main-footer li {
+	font-size: 75%;
+	color: #ffffff;
+	height: 50px;
+	padding-top:15px;
+}
+
+#main-footer li.left {
+	border-left: 1px solid rgba(255,255,255,0.2);
+}
